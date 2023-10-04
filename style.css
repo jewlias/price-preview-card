@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 :root {
     --color-1: hsl(158, 36%, 37%);
     --color-2: hsl(30, 38%, 92%);
@@ -6,7 +8,7 @@
     --color5: hsl(0, 0%, 100%);
 
     --ff-one: 'Montserrat', sans-serif;
-    --ff-two: 'Fraunces', sans-serif;
+    --ff-two: 'Fraunces', serif;
 
     --fw-one: 500;
     --fw-two: 700;
@@ -17,15 +19,119 @@
     STYLES GENERAL RESET
 */
 
-* {
-    margin: 0;
-    padding: 0;
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+* {
+    margin: 0;
 }
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--color-2);
+    font-family: var(--ff-one);
+    font-weight: var(--fw-one);
+    color: var(--color4);
+    font-size: 14px;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
 /*
     GENERAL STYLES    
 */
+h1 {
+    color: var(--color3);
+    text-transform: capitalize;
+    font-family: var(--ff-two);
+    font-weight: var(--fw-two);
+    line-height: 1;
+    margin-block: 20px;
+}
+
+h4 {
+    font-weight: var(--ff-one);
+    letter-spacing: 5px;
+}
+
+.text-container {
+    width: 87%;
+    margin-inline: auto;
+    padding-block: 15px;
+}
+
+.price {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+/*
+    MOBILE STYLES
+*/
+.des-img {
+    display: none;
+}
+
+.container {
+    max-width: 350px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--color5);
+}
+
+.new-price {
+    color: var(--color-1);
+    font-weight: var(--fw-two);
+    font-family: var(--ff-two);
+    font-size: 28px;
+}
+
+.mob-img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+
+.btn {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--color-1);
+    color: var(--color5);
+    border-radius: 10px;
+    padding-block: 10px;
+    font-weight: var(--ff-two);
+}
+
+.btn img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
