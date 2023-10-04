@@ -1,0 +1,31 @@
+:root {
+    --color-1: hsl(158, 36%, 37%);
+    --color-2: hsl(30, 38%, 92%);
+    --color3: hsl(212, 21%, 14%);
+    --color4: hsl(228, 12%, 48%);
+    --color5: hsl(0, 0%, 100%);
+
+    --ff-one: 'Montserrat', sans-serif;
+    --ff-two: 'Fraunces', sans-serif;
+
+    --fw-one: 500;
+    --fw-two: 700;
+}
+
+
+/*
+    STYLES GENERAL RESET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+/*
+    GENERAL STYLES    
+*/
